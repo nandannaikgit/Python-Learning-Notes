@@ -16,3 +16,7 @@
 #         return n + recursion(n-1)
     
 # print(recursion(5))
+
+
+"""3.Variable-Length Arguments: Write a function that accepts any number of arguments and returns their average.
+"""
