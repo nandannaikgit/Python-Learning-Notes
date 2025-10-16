@@ -20,3 +20,11 @@
 
 """3.Variable-Length Arguments: Write a function that accepts any number of arguments and returns their average.
 """
+
+def average(*n):
+    total = sum(n)
+    count = len(n)
+    avg = total / count
+    print("Sum is :",total)
+    print("Average is: ",avg)
+average(1,2,3,4,5,1)
