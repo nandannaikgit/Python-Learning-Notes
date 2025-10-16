@@ -1,4 +1,10 @@
-# variable length arguments *args
+"""variable length arguments *args
+                or
+    Arbitrary Arguments ( args ,  *kwargs )
+
+
+"""
+""" args  (Multiple Positional Arguments)"""
 
 # def add(*a):
 #     print(a)
@@ -10,6 +16,8 @@
 # print(add(1,100,2))
 
 
+"""*kwargs  (Multiple Keyword Arguments)
+Allows passing multiple keyword arguments as a dictionary"""
 # **kwargs
 # def student_info(**details):
 #     for key, value in details.items():
