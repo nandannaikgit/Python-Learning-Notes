@@ -15,11 +15,19 @@
 
 class Database:
     def __init__(self):
-        self.storage = {}
+        self.__storage = {}
         
     def write(self,key,value):
-        self.storage[key] = value
+        self.__storage[key] = value
         
     def read(self, key):
-        return self.storage[key]
+        if key in self.__storage:
+            print(self.__storage[key])
+        else:
+            print("DB item not available")
         
+db = Database()
+db.write("subscriber","100k")
+db.write("name", "nandan")
+db.read("nandan")
+    
