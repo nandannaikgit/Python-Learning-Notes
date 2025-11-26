@@ -13,21 +13,33 @@
 
 
 
-class Database:
-    def __init__(self):
-        self.__storage = {}
+# class Database:
+#     def __init__(self):
+#         self.__storage = {}
         
-    def write(self,key,value):
-        self.__storage[key] = value
+#     def write(self,key,value):
+#         self.__storage[key] = value
         
-    def read(self, key):
-        if key in self.__storage:
-            print(self.__storage[key])
-        else:
-            print("DB item not available")
+#     def read(self, key):
+#         if key in self.__storage:
+#             print(self.__storage[key])
+#         else:
+#             print("DB item not available")
         
-db = Database()
-db.write("subscriber","100k")
-db.write("name", "nandan")
-db.read("nandan")
+# db = Database()
+# db.write("subscriber","100k")
+# db.write("name", "nandan")
+# db.read("nandan")
     
+    
+    
+    
+#Assignment
+"""
+1.Encapsulation:
+
+Create a BankAccount class with private attributes for account_number and balance.
+Add methods to check balance, deposit, and withdraw funds.
+Try accessing the balance directly and observe the result.
+
+"""
