@@ -43,3 +43,31 @@ Add methods to check balance, deposit, and withdraw funds.
 Try accessing the balance directly and observe the result.
 
 """
+
+class BankAccount:
+    def __init__(self, acc_number, balance):
+        self.__acc_number = acc_number
+        self.__balance = balance
+        
+    def check_balance(self):
+        print(f"Balance is {self.__balance }")
+        
+    def deposit(self, amount):
+        self.__balance += amount
+        
+    def withdraw(self, amount):
+        if self.__balance < amount:
+            print("Insufficient funds.")
+        self.__balance += amount
+        print(f"Withdraw Successfully - Balance: {self.__balance}")
+      
+a = BankAccount(1, 100)
+a.check_balance()
+a.deposit(100)
+a.check_balance()
+a.withdraw(100) 
+a.check_balance() 
+a.withdraw(10000) 
+a.check_balance
+        
+    
