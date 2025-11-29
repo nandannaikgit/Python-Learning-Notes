@@ -58,7 +58,7 @@ class BankAccount:
     def withdraw(self, amount):
         if self.__balance < amount:
             print("Insufficient funds.")
-        self.__balance += amount
+        self.__balance -= amount
         print(f"Withdraw Successfully - Balance: {self.__balance}")
       
 a = BankAccount(1, 100)
@@ -68,6 +68,6 @@ a.check_balance()
 a.withdraw(100) 
 a.check_balance() 
 a.withdraw(10000) 
-a.check_balance
+a.check_balance()
         
     
