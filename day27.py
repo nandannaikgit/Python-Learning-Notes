@@ -86,25 +86,87 @@
 
 #Abstract class
 
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class Vehicle(ABC):
-    @abstractmethod
-    def start_engine(self):
-        pass
+# class Vehicle(ABC):
+#     @abstractmethod
+#     def start_engine(self):
+#         pass
     
-class Bike(Vehicle):
-    def __init__(self, name):
-        self.name = name
+# class Bike(Vehicle):
+#     def __init__(self, name):
+#         self.name = name
         
-    def start_engine(self):
-        print("Starting engine")
+#     def start_engine(self):
+#         print("Starting engine")
         
         
-b = Bike("Royal Enfield")
-print(b.name)
-b.start_engine()
+# b = Bike("Royal Enfield")
+# print(b.name)
+# b.start_engine()
 
 
 """Assignement"""
+
+# Getters and Setters:
+
+# Create a class BankAccount with a private attribute balance.
+# Write a getter method to retrieve the balance and a setter method to update it, ensuring the balance never goes below zero.
+# Method Overloading:
+
+# Write a class Calculator with a method multiply(). Allow it to take either two or three arguments to multiply two or three numbers.
+# Method Overriding:
+
+# Create a parent class Shape with a method draw() that prints "Drawing shape".
+# Create a child class Circle that overrides draw() to print "Drawing circle".
+# Abstract Classes:
+
+# Define an abstract class Employee with an abstract method calculate_salary().
+# Create a subclass Manager that implements calculate_salary() based on working hours and rate per hour.
+      
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.__balance = balance
+        
+#     def get_balance(self):
+#         return self.__balance
+    
+#     def set_balance(self, updated_balance):
+#         if updated_balance < 0:
+#             print("ERROR: Balance cannot be negatve value")
+#         self.__balance = updated_balance
+        
+# b = BankAccount(134)
+
+# b.get_balance()
+# b.set_balance(-1)
+
+
+class Shape:
+    def draw(self):
+        print("Drawing shape")
+        
+class Circle(Shape):
+    def draw(self):
+        super().draw()
+        print("Drawing circle.")
+        
+        
+        
+c = Circle()
+
+c.draw()
+         
+         
+from abc import ABC, abstractmethod
+
+class Employee(ABC):
+    @abstractmethod
+    def calculate_salary(self):
+        pass
+    
+class Manager(Employee):
+    def calculate_salary(self):
+        print("Manager salary is calculated")
+            
         

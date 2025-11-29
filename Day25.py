@@ -71,3 +71,19 @@ a.withdraw(10000)
 a.check_balance()
         
     
+# Abstraction:
+
+# Design a Phone class with methods to call_contact and take_picture.
+# Abstract away any internal processing details and focus on creating a user-friendly interface.
+
+class Phone:
+    def take_pictures(self):
+        #call os api to open camera
+        #wait for users click
+        #process image
+        #store image in memory
+        #return preview
+        print("Picture Taken") 
+p =Phone()
+p.take_picture()         
+    
