@@ -5,9 +5,12 @@
 
 #2.Write a program to add two numbers.
 
-a = int(input("Enter a first number: "))
-b = int(input("Enter a second number: "))
+# a = int(input("Enter a first number: "))
+# b = int(input("Enter a second number: "))
 
-c = a + b
+# c = a + b
 
-print("sum is", c)
+# print("sum is", c)
+
+#3. Write a program to check if a number is even or odd.
+
